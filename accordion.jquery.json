@@ -1,0 +1,25 @@
+{
+    "name": "accordion",
+    "title": "jqueryaccordion",
+    "description": "Creating a simple Acccordion using jquery that can be customized easily.",
+    "keywords": [
+        "accordion"
+    ],
+    "version": "1.0.1",
+    "author": {
+        "name": "Ajay Kumar Yadav",
+        "url": "https://github.com/jquery/jquery-color/blob/2.1.2/AUTHORS.txt"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+        }
+    ],
+    "bugs": "https://github.com/ajaykumaryadav/accordion/issues",
+    "homepage": "https://github.com/ajaykumaryadav/accordion/",
+    "docs": "https://github.com/ajaykumaryadav/accordion",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
