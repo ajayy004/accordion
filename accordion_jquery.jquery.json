@@ -1,6 +1,6 @@
 {
-    "name": "accordion",
-    "title": "jqueryaccordion",
+    "name": "accordion_jquery",
+    "title": "Accordion",
     "description": "Creating a simple Acccordion using jquery that can be customized easily.",
     "keywords": [
         "accordion"
