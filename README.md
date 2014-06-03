@@ -3,7 +3,7 @@
 
 ###Try it out:
 
-If you find this useful and want to show some love & encouragement, I am on [Gittip](https://www.gittip.com/ajaykumaryadav/).
+
 
 ## Get Started
 
