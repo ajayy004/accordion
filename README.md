@@ -2,8 +2,7 @@
 *An Accordion library in js for your websites that can be customized easily with overwriting the variable*
 
 ###Try it out:
-
-
+-[Demo](http://ajaykumaryadav.github.io/plugins/accordion/)
 
 ## Get Started
 
