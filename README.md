@@ -68,7 +68,7 @@ You can overwrite the default varibale in function call
       tabContent: ".details", // Class or ID which tells the content to show on click
       accordAnimation: "2000",  // animation time
       bodyAnimation: "2000", // body slide animation time
-      spaceTop: "0" // spaceTop is uesd to maintain the offset from top (eg 100,50 etc). Wrong way (100px, 20px etc)
+      spaceTop: "0" // spaceTop is uesd to maintain the offset from top (eg 100,50 etc). Wrong way (100px, 20px, 10%, etc)
     });
   });
 </script>
