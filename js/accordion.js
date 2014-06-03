@@ -18,10 +18,28 @@
       tabContent: ".details",
       accordAnimation: 1000,
       bodyAnimation: 1000,
-      spaceTop: 0
+      spaceTop: 0,
+      closeOther : false
     };
     var settings = $.extend({}, defaults, options);
     $(settings.tabContent).hide();
+
+    // gobal vaiables setting
+    var curActiveOffset = null,
+        curOuterHeight = null;
+
+    // onclick of accordion closes the other tab
+    var closeOther = function() {
+      $( "li" ).each(function( index ) {
+        var hasClassCheck =  $("li").hasClass("active")
+        if (hasClassCheck == true) {
+          curActiveOffset = $("li.active").offset().top;
+          curOuterHeight = $("li.active").outerHeight();
+        }
+      // $(settings.tabContent).slideUp(parseInt(settings.accordAnimation))
+      // $("li.active").removeClass("active");
+    });
+    }
     
     $(document).on('click', settings.tabClick ,function() {
       var el = $(this),
@@ -34,6 +52,10 @@
         sibling.slideUp( parseInt(settings.accordAnimation) );
         parent.removeClass("active");
       } else {
+
+        if(settings.closeOther == true) {
+          closeOther();
+        }
         
         el.siblings(settings.tabContent).slideToggle(parseInt(settings.accordAnimation));
         if( display != "none" ) {
@@ -42,6 +64,7 @@
         else {
           parent.addClass("active");
         }
+        // $('html,body').animate({scrollTop:offsetTop - curOuterHeight - settings.spaceTop},parseInt(settings.bodyAnimation));
         $('html,body').animate({scrollTop:offsetTop - settings.spaceTop},parseInt(settings.bodyAnimation));
       }
     });
