@@ -1,11 +1,11 @@
 {
     "name": "accordion_jquery",
-    "title": "Accordion",
-    "description": "Creating a simple Acccordion using jquery that can be customized easily.",
+    "title": "Easy responsive Accordion",
+    "description": "Easy responsive Accordion - is a lightweight jQuery plugin which optimizes normal vertical accordion on multi devices like: web, tablets, Mobile (IPad & IPhone)",
     "keywords": [
         "accordion"
     ],
-    "version": "1.0.2",
+    "version": "1.0.3",
     "author": {
         "name": "Ajay Kumar Yadav",
         "url": "https://github.com/jquery/jquery-color/blob/2.1.2/AUTHORS.txt"
