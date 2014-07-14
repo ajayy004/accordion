@@ -19,6 +19,7 @@
       accordAnimation: 1000,
       bodyAnimation: 1000,
       spaceTop: 0,
+      delay:0,
       closeOther : false
     };
     var settings = $.extend({}, defaults, options);
@@ -36,8 +37,6 @@
           curActiveOffset = $("li.active").offset().top;
           curOuterHeight = $("li.active").outerHeight();
         }
-      // $(settings.tabContent).slideUp(parseInt(settings.accordAnimation))
-      // $("li.active").removeClass("active");
     });
     }
     
@@ -64,8 +63,7 @@
         else {
           parent.addClass("active");
         }
-        // $('html,body').animate({scrollTop:offsetTop - curOuterHeight - settings.spaceTop},parseInt(settings.bodyAnimation));
-        $('html,body').animate({scrollTop:offsetTop - settings.spaceTop},parseInt(settings.bodyAnimation));
+        $('html,body').delay(settings.delay).animate({scrollTop:offsetTop - settings.spaceTop},parseInt(settings.bodyAnimation));
       }
     });
   };
