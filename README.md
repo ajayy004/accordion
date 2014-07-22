@@ -37,7 +37,7 @@ Any element on your page which needs to have a accordion just follow the bellow 
 </ul>  
 ```
 
-### Defaults variables
+### Defaults variables (set)
 You can overwrite the default varibale in function call
 ```sh
     var defaults = {
