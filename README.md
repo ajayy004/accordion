@@ -41,11 +41,12 @@ Any element on your page which needs to have a accordion just follow the bellow 
 You can overwrite the default varibale in function call
 ```sh
     var defaults = {
-      tabClick: ".topWrap", \\ tabClick for header of the accordion (Basicly for the click)
-      tabContent: ".details", \\ tabContent for details of the respective header (accordion)
-      accordAnimation: 1000, \\ accordAnimation is the animation time to open the accordion
-      bodyAnimation: 1000, \\ bodyAnimation is the animation time for body to take while sliding
-      spaceTop: 0
+      tabClick: ".topWrap", // tabClick for header of the accordion (Basicly for the click)
+      tabContent: ".details", // tabContent for details of the respective header (accordion)
+      accordAnimation: 1000, // accordAnimation is the animation time to open the accordion
+      bodyAnimation: 1000, // bodyAnimation is the animation time for body to take while sliding
+      spaceTop: 0, // space form top
+      closeOther : true // on click of other tab close the previous tab
     };
 ```
 
@@ -67,7 +68,8 @@ You can overwrite the default varibale in function call
       tabContent: ".details", // Class or ID which tells the content to show on click
       accordAnimation: "2000",  // animation time
       bodyAnimation: "2000", // body slide animation time
-      spaceTop: "0" // spaceTop is uesd to maintain the offset from top (eg 100,50 etc). Wrong way (100px, 20px, 10%, etc)
+      spaceTop: "0", // spaceTop is uesd to maintain the offset from top (eg 100,50 etc). Wrong way (100px, 20px, 10%, etc)
+      closeOther : true
     });
   });
 </script>
