@@ -5,12 +5,13 @@
     var defaults = {
       tabClick: ".topWrap",
       tabContent: ".details",
-      accordAnimation: 1000,
-      bodyAnimation: 1000,
+      accordAnimation: 600,
+      bodyAnimation: 900,
       spaceTop: 0,
       delay:0,
       closeOther : false
     };
+
     var openedTabHeight = null;
     var openIndex = null;
     var closeIndex = null;
@@ -29,7 +30,6 @@
     }
 
     $(document).on('click', settings.tabClick ,function() {
-        console.log(closeIndex + "-----" + openIndex)
       var el = $(this),
           display = el.siblings(settings.tabContent).css("display"),
           sibling = el.siblings(settings.tabContent),
@@ -78,16 +78,12 @@
 
         }
           if(openIndex == closeIndex){
-              console.log(offsetTop);
               $('html,body').animate({ scrollTop:offsetTop - 42 },parseInt(settings.bodyAnimation));
           }else{
-              console.log("else")
               $('html,body').animate({ scrollTop:(offsetTop ) - openedTabHeight - settings.spaceTop },parseInt(settings.bodyAnimation));
           }
       }
     });
 
   };
-$(document).ready(function(){
-})
 }(window.jQuery);
