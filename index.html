@@ -58,16 +58,17 @@
   </li>
 </ul>
 <script type="text/javascript" src="js/jquery-api.js"></script>
-<script type="text/javascript" src="js/accordion-min.js"></script>
+<script type="text/javascript" src="js/accordion.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
     $("#accordion").accordion({
-      tabClick: ".topWrap", 
+      open: -1,
+      oneOpenedItem : false,
+      tabClick: ".topWrap",      
       tabContent: ".details",
-      accordAnimation: "500",
-      bodyAnimation: "800",
-      spaceTop: "0",
-      closeOther : true
+      speed: 600,
+      easing: 900,
+      spaceTop: 0
     });
   });
 </script>
